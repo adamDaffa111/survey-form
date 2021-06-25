@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title> survey form </title>
+</head>
+<body>
+  <div class="container">
+  <div id="main">
+   <div>
+     <h1 id="title"> freecodeCamp Survey Form </h1>
+     <p id="description"> thank you for taking the time to help us improve the platform </p>
+   </div>
+
+    <form action="/" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label"> Name </label>
+          <input type="text" id="name" placeholder="enter your name..." required="required">   
+          <label for="email" id="email-label"> email </label>
+          <input type="email" id="email" placeholder="enter your email..." required="required">   
+          <label for="number" id="number-label"> age (optional) </label>
+          <input type="number" id="number" placeholder="enter your age" min="1" max="50" required="required">   
+          <label> Which option best describes your current role? </label>
+          <select id="dropdown">
+            <option disabled>select current role</option>
+            <option> student </option>
+            <option> </option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+          <p> would you recommend freecodeCamp to a friend </p>
+          <div>
+            <input type="radio" value="definitely" name='answer'/><label> definitely </label>
+          </div>
+          <div>
+            <input type="radio" value="maybe" name='answer'/><label> maybe </label>
+          </div>
+          <div>
+            <input type="radio" value="not sure" name='answer'/><label> not sure </label>
+          </div>
+        </div>
+        
+        <div class="form-group opt2">
+          <label> Which option best describes your current role? </label>
+          <select id="dropdown">
+            <option disabled="">select current role</option>
+            <option> student </option>
+            <option> </option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <p>What would you like to see improved? <small>(Check all that apply)</small></p>
+          <div>
+            <input type="checkbox" value="frontend project"><label> frontend</label>
+          </div>
+          <div>
+            <input type="checkbox" value="backend project"><label> backend</label>
+          </div>
+          <div>
+            <input type="checkbox" value="data visualization"><label > data visualization</label>
+          </div>
+          <div>
+            <input type="checkbox" value="chalenge"><label> chalenge</label>
+          </div>
+          <div>
+            <input type="checkbox" value="video"><label> video </label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <p> any comments or suggestions</p>
+          <textarea placeholder="enter your comment"></textarea>
+          <button type="submit" id="submit"> submit </button>
+      </div>
+    </form>
+    </div>
+  </div>
+</body>
+</html>
